@@ -2,6 +2,8 @@ package com.example.addon;
 
 import org.slf4j.Logger;
 
+import com.example.addon.modules.AutoNetheriteUpgrade;
+import com.example.addon.modules.AutoRenamer;
 import com.mojang.logging.LogUtils;
 
 import meteordevelopment.meteorclient.addons.GithubRepo;
@@ -21,8 +23,9 @@ public class AddonTemplate extends MeteorAddon {
     public void onInitialize() {
         LOG.info("Initializing SerumWare Addon");
 
-        // Remove example module; only add AutoNetheriteUpgrade
+        // Add your modules here
         Modules.get().add(new AutoNetheriteUpgrade());
+        Modules.get().add(new AutoRenamer());
 
         // You can register commands or HUD elements here if you want
         // Commands.add(new CommandExample());
@@ -41,6 +44,6 @@ public class AddonTemplate extends MeteorAddon {
 
     @Override
     public GithubRepo getRepo() {
-        return new GithubRepo("YourGitHubUsername", "YourRepoName"); // update if you want
+        return new GithubRepo("YourGitHubUsername", "YourRepoName"); // Replace with your actual GitHub repo info
     }
 }
