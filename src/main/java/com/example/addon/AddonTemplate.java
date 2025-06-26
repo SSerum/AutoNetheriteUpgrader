@@ -2,6 +2,7 @@ package com.example.addon;
 
 import org.slf4j.Logger;
 
+import com.example.addon.modules.AutoChestLoot;
 import com.example.addon.modules.AutoNetheriteUpgrade;
 import com.example.addon.modules.AutoRenamer;
 import com.mojang.logging.LogUtils;
@@ -26,6 +27,7 @@ public class AddonTemplate extends MeteorAddon {
         // Add your modules here
         Modules.get().add(new AutoNetheriteUpgrade());
         Modules.get().add(new AutoRenamer());
+        Modules.get().add(new AutoChestLoot());
 
         // You can register commands or HUD elements here if you want
         // Commands.add(new CommandExample());

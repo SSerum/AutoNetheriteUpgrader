@@ -1,7 +1,7 @@
 package com.example.addon.modules;
 
-import static com.example.addon.AddonTemplate.CATEGORY;
 import com.example.addon.AddonTemplate;
+
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.settings.BoolSetting;
 import meteordevelopment.meteorclient.settings.IntSetting;
